@@ -3,7 +3,6 @@ Low‑Latency Trading Simulator (Java)
 This project is a minimalistic yet practical trading simulator designed to emulate a single‑instrument exchange with extremely low latency. It was built from the ground up in Java to be deterministic and easy to extend. By default it runs entirely in memory, uses a ring‑buffer sequencer to serialise incoming events, and exposes both console and network gateways for submitting orders.
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://travis-ci.com)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/example/low-latency-trading-simulator/releases)
 
 Features
@@ -73,7 +72,3 @@ This simulator is intentionally simple. Here are some ideas for extension:
 - **Latency Optimisation**: Swap the `ArrayBlockingQueue` with LMAX Disruptor for even lower jitter and integrate CPU pinning or real‑time Java settings.
 
 If you encounter issues or have suggestions, feel free to open an issue or submit a pull request. This project is a learning tool—contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
